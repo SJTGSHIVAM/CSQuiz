@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "nav nav nav nav nav nav nav nav nav nav nav nav"
+      "lside lside . con con con con con con . rside rside"
+      "foot foot foot foot foot foot foot foot foot foot foot foot";
+    grid-template-rows: minmax(10%, max-content) 1fr minmax(10%, max-content);
+    min-height: 100vh;
+    max-width: 100vw;
+  }
+  .csq__header {
+    grid-area: nav;
+  }
+  .csq__aside--right {
+    grid-area: rside;
+  }
+  .csq__footer {
+    grid-area: foot;
+  }
+}
+/*=====  End of usage layout  ======*/
