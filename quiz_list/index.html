@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://thisui.netlify.app/min/index.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="http://127.0.0.1:5500/min/index.css" />
     <link rel="stylesheet" href="/root.css" />
     <script src="/theme.js" type="module" defer></script>
     <title>CSQuiz</title>
   </head>
   <body>
-    <header>
+    <header class="csq__header">
       <nav class="tui__nav--box tui__pd-in-xl">
         <h1 class="tui__nav--logo tui__h-3"><a href="/">CSQuiz</a></h1>
         <div class="tui__nav--mid"></div>
@@ -45,7 +46,76 @@
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="csq__main">
+      <h1 class="tui__h-1 tui__text--center">Select a quiz to play!</h1>
+      <ul class="csq_ul--qlist tui__scrollbar--invisible tui__pd-md">
+        <li class="csq_li--qlist-item">
+          <div
+            class="tui__card tui__pos--rel tui_card--shadow tui__width--100 tui__height--100 tui__flex--col"
+          >
+            <div class="tui__card--img">
+              <img
+                class="tui__image--center-cover"
+                src="/assets/webps/dbms.webp"
+                alt="image"
+              />
+            </div>
+            <div class="tui__card--header tui__pd-xs">
+              <h4 class="tui__h-4" class="tui__h-1">Database Management</h4>
+              <h5 class="tui__h-5">Lets test you knowledge</h5>
+            </div>
+            <div class="tui__card--body tui__pd-xs">
+              <p class="tui__text-sm">5 Questions</p>
+            </div>
+            <div class="tui__card--footer"></div>
+          </div>
+        </li>
+        <li class="csq_li--qlist-item">
+          <div
+            class="tui__card tui__pos--rel tui_card--shadow tui__width--100 tui__height--100 tui__flex--col"
+          >
+            <div class="tui__card--img">
+              <img
+                class="tui__image--center-cover"
+                src="/assets/webps/dm.webp"
+                alt="image"
+              />
+            </div>
+            <div class="tui__card--header tui__pd-xs">
+              <h4 class="tui__h-4" class="tui__h-1">Discrete Mathematics</h4>
+              <h5 class="tui__h-5">Lets test you knowledge</h5>
+            </div>
+            <div class="tui__card--body tui__pd-xs">
+              <p class="tui__text-sm">5 Questions</p>
+            </div>
+            <div class="tui__card--footer"></div>
+          </div>
+        </li>
+        <li class="csq_li--qlist-item">
+          <div
+            class="tui__card tui__pos--rel tui_card--shadow tui__width--100 tui__height--100 tui__flex--col"
+          >
+            <div class="tui__card--img">
+              <img
+                class="tui__image--center-cover"
+                src="/assets/webps/dsa.webp"
+                alt="image"
+              />
+            </div>
+            <div class="tui__card--header tui__pd-xs">
+              <h4 class="tui__h-4" class="tui__h-1">
+                Data Structures and Algorithms
+              </h4>
+              <h5 class="tui__h-5">Lets test you knowledge</h5>
+            </div>
+            <div class="tui__card--body tui__pd-xs">
+              <p class="tui__text-sm">5 Questions</p>
+            </div>
+            <div class="tui__card--footer"></div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer class="csq__footer"></footer>
   </body>
 </html>

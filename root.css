@@ -17,5 +17,5 @@
   --white-dark: #5d5d5d;
   --white-dark-fil: invert(99%) sepia(6%) saturate(3458%) hue-rotate(174deg)
     brightness(112%) contrast(91%);
-  --shadows-md: var(--dark) 2.4px 2.4px 3.2px;
+  --shadows-md: var(--theme-dark) 2.4px 2.4px 3.2px;
 }
