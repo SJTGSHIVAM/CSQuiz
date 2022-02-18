@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://thisui.netlify.app/min/index.css" />
+    <link rel="stylesheet" href="/root.css" />
+    <link rel="stylesheet" href="/override.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <script src="/theme.js" type="module" defer></script>
+    <script src="/index.js" type="module" defer></script>
+    <title>CSQuiz</title>
+  </head>
+  <body>
+    <header class="csq__header">
+      <nav class="tui__nav--box tui__pd-in-xl">
+        <h1 class="tui__nav--logo tui__h-3"><a href="/">CSQuiz</a></h1>
+        <div class="tui__nav--mid"></div>
+        <ul class="tui__nav--list">
+          <li>
+            <div class="tui__avatar-br-lg tui__flex--center tui__avatar-md">
+              <img
+                class="tui__img-hw100"
+                src="/assets/pngs/player.png"
+                alt="user icon"
+              />
+            </div>
+          </li>
+          <li>
+            <button class="tui__btn--link-br-none tui__m-in-md">
+              <a href="/high_scores">High Scores</a>
+            </button>
+          </li>
+          <li>
+            <div class="tui__avatar-br-lg tui__flex--center tui__avatar-md">
+              <img
+                class="tui__theme--switch tui__col--svg tui__img-hw100"
+                src="/assets/svgs/moon.svg"
+              />
+            </div>
+          </li>
+          <li>
+            <button class="tui__btn--icon-br-none">
+              <a href="/quiz_list">Quizes</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="csq__main tui__m-xl">
+      <h1 class="tui__h-1">CSQuiz</h1>
+      <p class="tui__text-lg">
+        CSQuiz is a place where you can playfully test your knoledge arround
+        different computer science concepts.
+      </p>
+    </main>
+    <aside class="csq__aside--right tui__m-xl">
+      <div
+        class="tui__card tui__pos--rel tui_card--shadow tui__pd-xs csq__card--login"
+      >
+        <div class="tui__card--img"></div>
+        <div class="tui__card--header tui__pd-xs">
+          <h4 class="tui__h-4">Login</h4>
+        </div>
+        <div class="tui__card--body tui__pd-xs">
+          <form>
+            <span class="tui__input--box">
+            <label for="display">Username:</label>
+            <input
+              type="text"
+              placeholder="enter username"
+              
+              class="tui__input--val"
+              id="display"
+            />
+          </span>
+          <span class="tui__input--box">
+            <label for="display">Password:</label>
+            <input
+              type="password"
+              placeholder="enter password"
+              
+              class="tui__input--val"
+              id="display"
+            />
+          </span>
+          <button class="tui__btn--primary-br-none" type="submit">Login</button>
+          
+        </div>
+      </form>
+      <div class="tui__card--footer tui__flex--center tui__m-xl">
+          <button class="tui__btn--link-br-none csq__btn--forgot">
+            Forgot Password ?
+          </button>
+          <button class="tui__btn--link-br-none csq__btn--reg">Register</button>
+        </div>
+      </div>
+
+      <div
+        class="tui__card tui__pos--rel tui_card--shadow tui__dis--none tui__pd-xs csq__card--reg"
+      >
+        <div class="tui__card--img"></div>
+        <div class="tui__card--header tui__pd-xs">
+          <h4 class="tui__h-4">Sign up</h4>
+        </div>
+        <div class="tui__card--body tui__pd-xs tui__flex--col">
+      <form>
+        <span class="tui__input--box">
+            <label for="display">Username:</label>
+            <input
+              type="text"
+              placeholder="enter username"
+              
+              class="tui__input--val"
+              id="display"
+            />
+          </span>
+          <span class="tui__input--box">
+            <label for="display">email:</label>
+            <input
+              type="email"
+              placeholder="enter email"
+              
+              class="tui__input--val"
+              id="display"
+            />
+          </span>
+          <span class="tui__input--box">
+            <label for="display">Password:</label>
+            <input
+              type="password"
+              placeholder="enter password"
+              
+              class="tui__input--val "
+              id="display"
+            />
+          </span>
+          <span class="tui__input--box">
+            <label for="display">Confirm Password:</label>
+            <input
+              type="password"
+              placeholder="enter password"
+              
+              class="tui__input--val"
+              id="display"
+            />
+          </span>
+          <button
+            class="tui__btn--primary-br-none tui__width--max-content tui__m-t-md tui__m-l-xs"
+            type="submit"
+          >
+            Sign up
+          </button>
+      </form>
+    </div>
+        <div class="tui__card--footer tui__flex--center tui__m-xl">
+          <button class="tui__btn--link-br-none csq__btn--login">Login</button>
+        </div>
+      </div>
+
+      <div
+        class="tui__card tui__pos--rel tui_card--shadow tui__dis--none tui__pd-xs csq__card--forgot"
+      >
+        <div class="tui__card--img"></div>
+        <div class="tui__card--header tui__pd-xs">
+          <h4 class="tui__h-4">Forgot Password</h4>
+        </div>
+        <div class="tui__card--body tui__pd-xs">
+      <form>
+        <span class="tui__input--box">
+            <label for="display">Username:</label>
+            <input
+              type="text"
+              placeholder="enter username"
+              
+              class="tui__input--val"
+              id="display"
+            />
+          </span>
+
+          <button class="tui__btn--primary-br-none" type="submit">Reset</button>
+      </form>
+    </div>
+        <div class="tui__card--footer tui__flex--center tui__m-xl">
+          <button class="tui__btn--link-br-none csq__btn--login">Login</button>
+          <button class="tui__btn--link-br-none csq__btn--reg">Register</button>
+        </div>
+      </div>
+    </aside>
+    <footer class="csq__footer"></footer>
+  </body>
+</html>

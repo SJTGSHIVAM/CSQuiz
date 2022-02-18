@@ -1,0 +1,22 @@
+/* *************************   This file contains minor fixes that are needed in the library and some overriding css that will help us make custom ui ******************* */
+
+/*=============================================
+=            new css to add            =
+=============================================*/
+
+/*=====  End of new css to add  ======*/
+
+.tui__input--box label {
+  display: block;
+}
+
+/*=============================================
+=             fixes            =
+=============================================*/
+
+.tui__flex--col {
+  display: flex;
+  flex-direction: column;
+}
+
+/*=====  End of  fixes  ======*/
