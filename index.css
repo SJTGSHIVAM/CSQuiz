@@ -6,11 +6,12 @@
       "lside lside . con con con con con con . rside rside"
       "foot foot foot foot foot foot foot foot foot foot foot foot";
     grid-template-rows: minmax(10%, max-content) 1fr minmax(10%, max-content);
-    min-height: 100vh;
-    max-width: 100vw;
   }
   .csq__header {
     grid-area: nav;
+  }
+  .csq__main {
+    grid-area: con;
   }
   .csq__aside--right {
     grid-area: rside;

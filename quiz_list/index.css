@@ -1,1 +1,36 @@
-@import "/root.css";
+.csq_ul--qlist {
+  display: inline-flex;
+  width: 100%;
+  justify-content: safe center;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  gap: 1rem;
+}
+.csq_li--qlist-item {
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 20rem;
+  aspect-ratio: 13 / 14;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "con con con con con con con con con con con con"
+    "foot foot foot foot foot foot foot foot foot foot foot foot";
+  grid-template-rows: minmax(10%, max-content) 1fr minmax(10%, max-content);
+}
+.csq__header {
+  grid-area: nav;
+}
+.csq__main {
+  grid-area: con;
+  align-self: center;
+  overflow: hidden;
+}
+.csq__footer {
+  grid-area: foot;
+}
+/* } */
+/*=====  End of usage layout  ======*/
