@@ -1,10 +1,16 @@
 .csq_ul--qlist {
-  display: inline-flex;
+  display: flex;
   width: 100%;
-  justify-content: safe center;
   flex-wrap: nowrap;
   overflow: scroll;
   gap: 1rem;
+}
+.csq_ul--qlist li:last-child {
+  margin-right: auto;
+}
+
+.csq_ul--qlist li:first-child {
+  margin-left: auto;
 }
 .csq_li--qlist-item {
   flex-shrink: 0;
