@@ -5,7 +5,7 @@
       "nav nav nav nav nav nav nav nav nav nav nav nav"
       "lside lside . con con con con con con . rside rside"
       "foot foot foot foot foot foot foot foot foot foot foot foot";
-    grid-template-rows: minmax(10%, max-content) 1fr minmax(10%, max-content);
+    grid-template-rows: minmax(10vh, max-content) 1fr minmax(10vh, max-content);
   }
   .csq__header {
     grid-area: nav;
