@@ -1,1 +1,33 @@
-@import "/root.css";
+body {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "con con con con con con con con con con con con"
+    "foot foot foot foot foot foot foot foot foot foot foot foot";
+  grid-template-rows: minmax(10vh, max-content) 1fr minmax(10vh, max-content);
+  row-gap: 1rem;
+}
+.csq__header {
+  grid-area: nav;
+}
+.csq__main {
+  grid-area: con;
+  align-self: center;
+  overflow: hidden;
+}
+.csq__footer {
+  grid-area: foot;
+}
+
+.csq_li--name-list-item {
+  width: 20rem;
+  margin: auto;
+}
+.csq__ol--gap * {
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .csq_li--name-list-item {
+    width: 40rem;
+  }
+}
