@@ -1,0 +1,38 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "con con con con con con con con con con con con"
+    "foot foot foot foot foot foot foot foot foot foot foot foot";
+  grid-template-rows: minmax(10vh, max-content) 1fr minmax(10vh, max-content);
+}
+.csq__header {
+  grid-area: nav;
+}
+.csq__main {
+  grid-area: con;
+  align-self: center;
+  overflow: hidden;
+}
+.csq__footer {
+  grid-area: foot;
+}
+
+.csq__profile--body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+}
+
+.csq_li--rule-list-item {
+  width: 20rem;
+  margin: auto;
+}
+.csq__ol--gap * {
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .csq_li--rule-list-item {
+    width: 40rem;
+  }
+}

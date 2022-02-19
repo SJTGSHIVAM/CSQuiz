@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://thisui.netlify.app/min/index.css" />
     <link rel="stylesheet" href="/root.css" />
     <script src="/theme.js" type="module" defer></script>
-    <script src="./index.js" type="module" defer></script>
     <title>CSQuiz</title>
   </head>
   <body>
@@ -50,53 +49,42 @@
       </nav>
     </header>
     <main class="csq__main">
-      <h2 class="tui__h-2 tui__text--center">DBMS Quiz</h2>
       <ul class="csq_ul--qlist tui__scrollbar--invisible tui__pd-md">
-        <li class="csq_li--question-list-item">
+        <li class="csq_li--rule-list-item">
           <div
             class="tui__card tui__pos--rel tui_card--shadow tui__width--100 tui__height--100 tui__flex--col tui__pd-md"
           >
-            <div
-              class="tui__card--header tui__pd-xs tui__flex--row-space-between tui__text--center"
-            >
-              <h3 class="tui__h-3">Question: 10/10</h3>
-              <h3 class="tui__h-3">Score: 50</h3>
+            <div class="tui__card--header tui__flex--col-align-center">
+              <div class="tui__avatar-br-lg tui__flex--center tui__avatar-xxxl">
+                <img
+                  class="tui__img-hw100"
+                  src="/assets/pngs/player.png"
+                  alt="user icon"
+                />
+              </div>
+
+              <h3 class="tui__h-3">Ram Mishra</h3>
             </div>
-            <div class="tui__card--body tui__pd-xs">
-              <p class="tui__text-sm">
-                Which of the following is not part of the ACID properties?
-              </p>
-              <ol class="csq__ol--gap csq__ans--option">
-                <li>
-                  <button class="tui__bgcol--th-dark-light tui__child--strech">
-                    Consistency
-                  </button>
-                </li>
-                <li>
-                  <button class="tui__bgcol--th-dark-light tui__child--strech">
-                    Atomicity
-                  </button>
-                </li>
-                <li>
-                  <button class="tui__bgcol--th-dark-light tui__child--strech">
-                    Inconsistency
-                  </button>
-                </li>
-                <li>
-                  <button class="tui__bgcol--th-dark-light tui__child--strech">
-                    Isolation
-                  </button>
-                </li>
-              </ol>
+            <div class="tui__card--body tui__pd-xs csq__profile--body">
+              <div class="tui__m-sm">Userame:</div>
+              <div class="tui__m-sm">Rmrah56</div>
+
+              <div class="tui__m-sm">Email:</div>
+              <div class="tui__m-sm">rmrah56@zmail.com</div>
+
+              <div class="tui__m-sm">Age:</div>
+              <div class="tui__m-sm">25</div>
+
+              <div class="tui__m-sm">DOB:</div>
+              <div class="tui__m-sm">07/03/1997</div>
+
+              <div class="tui__m-sm">Total Score:</div>
+              <div class="tui__m-sm">300</div>
+
+              <div class="tui__m-sm">Joined:</div>
+              <div class="tui__m-sm">04/02/2022</div>
             </div>
-            <div
-              class="tui__card--footer tui__pd-md tui__flex--row-space-between"
-            >
-              <button class="tui__btn--link-br-none">Skip</button>
-              <a href="/result"
-                ><button class="tui__btn--link-br-none">Submit</button></a
-              >
-            </div>
+            <div class="tui__card--footer tui__pd-md"></div>
           </div>
         </li>
       </ul>
