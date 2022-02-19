@@ -1,5 +1,5 @@
 :root {
-  --primary-col: #93df30;
+  --primary-col: #0f7600;
   --primary-col-fil: invert(85%) sepia(19%) saturate(904%) hue-rotate(180deg)
     brightness(104%) contrast(105%);
   --secondary-col: #6a73e9;
@@ -18,4 +18,5 @@
   --white-dark-fil: invert(99%) sepia(6%) saturate(3458%) hue-rotate(174deg)
     brightness(112%) contrast(91%);
   --shadows-md: var(--theme-dark) 2.4px 2.4px 3.2px;
+  --tui-btn-link-bg: var(--primary-col);
 }
