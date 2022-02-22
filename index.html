@@ -85,7 +85,16 @@
               id="display"
             />
           </span>
-          <button class="tui__btn--primary-br-none" type="submit">Login</button>
+          <span class="tui__flex--row tui__m-tb-sm tui__m-in-xs">
+            <input
+              type="checkbox"
+              placeholder="enter password"
+              id="remember"
+              class="tui__input--val tui__m-r-xs"
+            />
+            <label for="remember">Remember me</label>
+          </span>
+          <button class="tui__btn--primary-br-none tui__m-in-xs" type="submit">Login</button>
           
         </div>
       </form>
@@ -107,6 +116,24 @@
         <div class="tui__card--body tui__pd-xs tui__flex--col">
       <form>
         <span class="tui__input--box">
+          <label for="fname">First name:</label>
+          <input
+            type="text"
+            placeholder="First name"
+            class="tui__input--val"
+            id="fname"
+          />
+        </span>
+        <span class="tui__input--box">
+          <label for="lname">Last name:</label>
+          <input
+            type="text"
+            placeholder="First name"
+            class="tui__input--val"
+            id="lname"
+          />
+        </span>
+        <span class="tui__input--box">
             <label for="display">Username:</label>
             <input
               type="text"
@@ -117,33 +144,41 @@
             />
           </span>
           <span class="tui__input--box">
-            <label for="display">email:</label>
+            <label for="dob"> DOB:</label>
             <input
-              type="email"
-              placeholder="enter email"
-              
+              type="date"
               class="tui__input--val"
-              id="display"
+              id="dob"
             />
           </span>
           <span class="tui__input--box">
-            <label for="display">Password:</label>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              placeholder="Enter email"
+              
+              class="tui__input--val"
+              id="email"
+            />
+          </span>
+          <span class="tui__input--box">
+            <label for="pword">Password:</label>
             <input
               type="password"
               placeholder="enter password"
               
               class="tui__input--val "
-              id="display"
+              id="pword"
             />
           </span>
           <span class="tui__input--box">
-            <label for="display">Confirm Password:</label>
+            <label for="cpword">Confirm Password:</label>
             <input
               type="password"
               placeholder="enter password"
               
               class="tui__input--val"
-              id="display"
+              id="cpword"
             />
           </span>
           <button
