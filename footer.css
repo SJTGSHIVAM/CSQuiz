@@ -1,0 +1,11 @@
+.csq__footer {
+  grid-area: foot;
+  background-color: transparent;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.csq__footer > ul {
+  display: inline-flex;
+  gap: 3rem;
+  margin: 1rem auto;
+}
