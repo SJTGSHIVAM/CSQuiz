@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="https://thisui.netlify.app/min/index.css" />
     <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="/override.css" />
     <script src="/theme.js" type="module" defer></script>
+    <script src="./index.js" type="module" defer></script>
     <title>CSQuiz</title>
   </head>
   <body>
@@ -54,51 +56,145 @@
       </nav>
     </header>
     <main class="csq__main">
+      <h2 class="tui__h-2 tui__text--center">Create Quiz</h2>
       <ul class="csq_ul--qlist tui__scrollbar--invisible tui__pd-md">
-        <li class="csq_li--rule-list-item">
+        <li class="csq_li--question-list-item">
           <div
             class="tui__card tui__pos--rel tui_card--shadow tui__width--100 tui__height--100 tui__flex--col tui__pd-md"
           >
-            <div class="tui__card--header tui__flex--col-align-center">
-              <div class="tui__avatar-br-lg tui__flex--center tui__avatar-xxxl">
-                <img
-                  class="tui__img-hw100"
-                  src="/assets/pngs/player.png"
-                  alt="user icon"
-                />
-              </div>
-
-              <h3 class="tui__h-3">Ram Mishra</h3>
+            <div
+              class="tui__card--header tui__pd-xs tui__flex--row-space-between tui__text--center"
+            ></div>
+            <div class="tui__card--body tui__pd-xs">
+              <form>
+                <span class="tui__input--box">
+                  <label for="display">Name for Quiz:</label>
+                  <input
+                    type="text"
+                    placeholder="Quiz name"
+                    class="tui__input--val"
+                    id="display"
+                  />
+                </span>
+                <span class="tui__input--box">
+                  <label for="display">Time required in minutes:</label>
+                  <input
+                    type="number"
+                    placeholder="Enter minutes"
+                    class="tui__input--val"
+                    id="display"
+                  />
+                </span>
+                <span class="tui__input--box">
+                  <label for="display">Positive marks per question:</label>
+                  <input
+                    type="number"
+                    placeholder="Enter marks"
+                    class="tui__input--val"
+                    id="display"
+                  />
+                </span>
+                <span class="tui__input--box">
+                  <label for="display">Negative marks per question:</label>
+                  <input
+                    type="number"
+                    placeholder="Enter marks"
+                    class="tui__input--val"
+                    id="display"
+                  />
+                </span>
+              </form>
             </div>
-            <div class="tui__card--body tui__pd-xs csq__profile--body">
-              <div class="tui__m-sm">Userame:</div>
-              <div class="tui__m-sm">Rmrah56</div>
-
-              <div class="tui__m-sm">Email:</div>
-              <div class="tui__m-sm">rmrah56@zmail.com</div>
-
-              <div class="tui__m-sm">Age:</div>
-              <div class="tui__m-sm">25</div>
-
-              <div class="tui__m-sm">DOB:</div>
-              <div class="tui__m-sm">07/03/1997</div>
-
-              <div class="tui__m-sm">Total Score:</div>
-              <div class="tui__m-sm">300</div>
-
-              <div class="tui__m-sm">Joined:</div>
-              <div class="tui__m-sm">04/02/2022</div>
+            <div
+              class="tui__card--footer tui__pd-md tui__flex--row-space-between"
+            ></div>
+          </div>
+        </li>
+        <li class="csq_li--question-list-item">
+          <div
+            class="tui__card tui__pos--rel tui_card--shadow tui__width--100 tui__height--100 tui__flex--col tui__pd-md"
+          >
+            <div
+              class="tui__card--header tui__pd-xs tui__flex--row-space-between tui__text--center"
+            >
+              <h4 class="tui__h-4 tui__text--center">Add question:</h4>
+            </div>
+            <div class="tui__card--body tui__pd-xs">
+              <textarea
+                class="tui__input--area tui__width-80"
+                placeholder="Add your question here"
+              ></textarea>
+              <span class="tui__input--box">
+                <label for="display">Correct option:</label>
+                <input
+                  type="text"
+                  placeholder="Enter option"
+                  class="tui__input--val"
+                  id="display"
+                />
+              </span>
+              <span class="tui__input--box">
+                <label for="display">More option:</label>
+                <input
+                  type="text"
+                  placeholder="Enter option"
+                  class="tui__input--val"
+                  id="display"
+                />
+              </span>
+              <span class="tui__input--box">
+                <label for="display">More option:</label>
+                <input
+                  type="text"
+                  placeholder="Enter option"
+                  class="tui__input--val"
+                  id="display"
+                />
+              </span>
+              <span class="tui__input--box">
+                <label for="display">More option:</label>
+                <input
+                  type="text"
+                  placeholder="Enter option"
+                  class="tui__input--val"
+                  id="display"
+                />
+              </span>
             </div>
             <div class="tui__card--footer tui__pd-md tui__flex--center">
-              <a href="/create_quiz/" class="tui__child--strech">
-                <button class="tui__btn--link-br-none tui__child--strech">
-                  Create custom quiz
-                </button>
-              </a>
+              <button class="tui__btn--link-br-none">Add more question</button>
+            </div>
+          </div>
+        </li>
+        <li class="csq_li--question-list-item">
+          <div
+            class="tui__card tui__pos--rel tui_card--shadow tui__width--100 tui__height--100 tui__flex--col tui__pd-md"
+          >
+            <div
+              class="tui__card--header tui__pd-xs tui__flex--row-space-between tui__text--center"
+            ></div>
+            <div class="tui__card--body tui__pd-xs">
+              <p class="tui__text-sm">
+                Note: Once you click on save and share you will be directed to
+                all quizes where you ccan see your quiz listed and sharable link
+                to your quiz will be added to clipboard. Remember custom made
+                quizes are visible to everyone either they can directly visit
+                you quiz or you can share the link to them. Only 5 custom quiz
+                are alloted in the free plan for more custom quizes or private
+                quizes consider joining premium membership.
+              </p>
+            </div>
+            <div class="tui__card--footer tui__pd-md tui__flex--center">
+              <a href="/quiz_list/"
+                ><button class="tui__btn--link-br-none">
+                  Save and Share
+                </button></a
+              >
             </div>
           </div>
         </li>
       </ul>
+      <div class="tui__flex--center"></div>
     </main>
     <footer class="csq__footer">
       <ul>

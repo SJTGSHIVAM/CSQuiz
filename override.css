@@ -19,4 +19,11 @@
   flex-direction: column;
 }
 
+.tui__input--area {
+  resize: none;
+  overflow: auto;
+  width: 100%;
+  padding: var(--button-padding-xs);
+  outline: var(--g-border-width-xs) solid var(--body-text-color);
+}
 /*=====  End of  fixes  ======*/
