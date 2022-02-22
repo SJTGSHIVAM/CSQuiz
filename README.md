@@ -22,6 +22,8 @@ CSQuiz is a simple quiz app which will test you around different domains of comp
 
 A few features you get with CSQuiz:
 
+* Dark/Light theme
+* Responsive Design
 * Home Page
 * Quizzes by Category
 * Search for quizes
