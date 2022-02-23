@@ -1,3 +1,8 @@
+.csq__category--featured {
+  width: 33vw;
+  height: 100%;
+}
+
 @media screen and (min-width: 768px) {
   body {
     display: grid;
@@ -18,6 +23,9 @@
   }
   .csq__footer {
     grid-area: foot;
+  }
+  .csq__category--featured {
+    width: 17vw;
   }
 }
 /*=====  End of usage layout  ======*/
